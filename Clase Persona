@@ -1,0 +1,51 @@
+package main;
+
+/**
+ *
+ * @author Christian
+ */
+//Creamos la clase Persona con sus variables privadas
+class Persona{
+
+ private int Edad;
+ private String Nombre;
+ private int Teléfono;
+ 
+ //Getters y Setters :
+ public void  setEdad(int Edad){this.Edad = Edad;}
+ public int getEdad(){return this.Edad;}
+ 
+ public void setNombre (String Nombre){this.Nombre = Nombre;}
+ public String getNombre (){return this.Nombre;}
+ 
+ public void setTeléfono(int Teléfono){this.Teléfono = Teléfono;}
+ public int getTeléfono (){return this.Teléfono;}
+}
+
+
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       
+       //Creamos nueva Clase e insertamos valores
+        Persona Antonio = new Persona();
+         Antonio.setEdad(36);
+         Antonio.getEdad();
+         Antonio.setNombre("Antonio");
+         Antonio.getNombre();
+         Antonio.setTeléfono(689485621);
+         Antonio.getTeléfono();
+         
+         //Imprimimos por consola
+         System.out.println(Antonio.getEdad());
+         System.out.println(Antonio.getNombre());
+         System.out.println(Antonio.getTeléfono());
+         
+        
+        }
+    }
+    
+
